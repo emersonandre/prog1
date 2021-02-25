@@ -6,9 +6,9 @@ public class Exercicio1 {
         System.out.println("- Professor: ANDREI DE ALMEIDA SAMPAIO BRAGA");
         System.out.println("- Aluno: Emerson Andre Silvestrin");
         System.out.println("- Objetivo:");
-            System.out.println("       O objetivo dessa disciplina é compreender os conceitos fundamentais");
-            System.out.println("       do paradigma de programação orientada a objetos e aplicá-los no");
-            System.out.println("       desenvolvimento de soluções de software.");
+            System.out.println("\t O objetivo dessa disciplina é compreender os conceitos fundamentais");
+            System.out.println("\t do paradigma de programação orientada a objetos e aplicá-los no");
+            System.out.println("\t desenvolvimento de soluções de software.");
         System.out.println("- Turno: Vespertino");
     }
 }
