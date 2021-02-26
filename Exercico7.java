@@ -5,14 +5,12 @@ ser dividido apenas por 1 e por ele mesmo: 5 / 1 = 5, resto 0; e 5 / 5 = 1, rest
 imprima na tela os 15 primeiros números primos existentes.
 */
 public class Exercico7 {
-    public static void main(String[] args){
-        int x;
-        System.out.println("os numeros primos de 1 a 15 são: ");
-        for(x = 1; x <= 15; x++){
-            double num = x % 2;
-            if(num != 0){
-               System.out.println(x);
+    public static void main(String[] args) {
+        out: for (int i = 1; i <= 15; i++) {
+            for (int k = 2; k < i; k++) {
+                if (i % k == 0) continue out;
             }
+            System.out.println("O numero: " + i + " é Primo");
         }
     }
 }
