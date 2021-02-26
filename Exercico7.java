@@ -6,11 +6,15 @@ imprima na tela os 15 primeiros números primos existentes.
 */
 public class Exercico7 {
     public static void main(String[] args) {
-        out: for (int i = 1; i <= 15; i++) {
-            for (int k = 2; k < i; k++) {
-                if (i % k == 0) continue out;
+        System.out.println("Os numeros primos de 1 a 15 são:");
+        for (int i = 1; i <= 15; i++) {
+            int count = 0;
+            for (int k = 1; k <= i; k++) {
+                if (i % k == 0) ++ count;
             }
-            System.out.println("O numero: " + i + " é Primo");
+            if (count == 2) {
+                System.out.println(i);
+            }
         }
     }
 }
