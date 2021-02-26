@@ -3,14 +3,12 @@
 existentes entre os números 100 e 200.
 */
 public class Exercico8 {
-    public static void main(String[] args){
-        int x;
-        System.out.println("os numeros primos de 100 a 200 são: ");
-        for(x = 100; x <= 200; x++){
-            double num = x % 2;
-            if(num != 0){
-               System.out.println(x);
+    public static void main(String[] args) {
+        out: for (int i = 100; i <= 200; i++) {
+            for (int k = 2; k < i; k++) {
+                if (i % k == 0) continue out;
             }
+            System.out.println("O numero: " + i + " é Primo");
         }
     }
 }
